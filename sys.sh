@@ -29,7 +29,9 @@ echo    "	================================================================
 		#deuxième commande "sudo chmod xampp..." permet de donner tous les droit au users et executer et lecture pour les autres
 		#toisieme commande "sudo ./xamp......." permet d'executer le programme
 		#quatrième commande "sudo /opt/lampp/lampp start" permet de demarer xampp
-		b)sudo /opt/lampp/lampp start 2> errtest ;#Permet de verifier si XAMPP est installé si ce le cas il le demarre sinon il le telecharger et install  et s'il y'a error il le rdirige vers le fichier errtest
+		
+		#Permet de verifier si XAMPP est installé si ce le cas il le demarre sinon il le telecharger et install  et s'il y'a error il le rdirige vers le fichier errtest
+		b)sudo /opt/lampp/lampp start 2> errtest ;
 		  echo "XAMPP est déjà installé ";
 			if [ $? -ne 0 ]; then
                 		wget https://www.apachefriends.org/xampp-files/7.0.18/xampp-osx-7.0.18-0-installer.dmg;
@@ -37,7 +39,7 @@ echo    "	================================================================
 				sudo ./xampp-linux-*-installer.run;
 				sudo /opt/lampp/lampp start 2> errtest;
 			fi ;;
-		c) ;;
+		c) find -ctime 3;;
 		#la commande vmstat permet de donner les informations sur la memoire, cpu, disque dur et swap
 		d)vmstat ;;
 		#permt de quit le processus
