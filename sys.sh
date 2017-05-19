@@ -47,7 +47,7 @@ do
  echo "* c) Archivage des éléments du repertoire personnel qui ont été modifier par l'utilisateur   *" 
  echo "*    sudoer il y'a deux jours dans le peripherique externe                                   *"
  echo "* d) Information sur l'utilisation du disque, de la mémoire, du processeur et du swap        *"
- echo "* q) Quitter !                                                                               *"
+ echo "* q) Quitter (Q/q) !                                                                               *"
  echo "*											    *"
  echo "*                                                                                            *"
  echo "*                     RÉALISER PAR OUMAR DJIME RATOU 14B486FS                                *"
